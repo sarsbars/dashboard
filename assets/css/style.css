@@ -8,22 +8,21 @@
     vertical-align: baseline;
 }
 
-body {
-    font-family:"Open Sans", Arial ,sans-serif;
-}
-
 /* - - - - - - - - - - - - - - - - - - */
 /*          Header & Footer            */
 /* - - - - - - - - - - - - - - - - - - */
 
+body {
+    font-family: "Inter", Arial,sans-serif;    
+}
 .container { 
     width: min(100% - 40px, 1280px);
 }
 header {
     height: 50px;
-    background-color: rgb(204, 160, 255);
+    background-color: rgb(68, 30, 191);
 }
-    
+
 h1 {
     font-size: 25px;
     font-weight: 600;
@@ -68,14 +67,15 @@ footer {
 
     p {
         text-align: center;
-        line-height: 80px;
+        line-height: 70px;
         font-size: 18px;
         font-weight: 400;
         color: #fff;
     }
    .contact-section {
-    position: relative;
-    top: 35px;
+        position: relative;
+        top: 30px;
+        left: 20px;
    }
     ul {
         list-style: none;
@@ -85,20 +85,26 @@ footer {
     }
     
     .icon {
-        font-size: 22px;
-        color: #faf5f5;
+        font-size: 30px;
+        color: #605d78;
         cursor: pointer;
         transition: color .4s ease-in-out;
-       
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        text-align: center;
+        background-color: #e2e2e2;
+        line-height: 1.4;
+          
     } 
     .icon.fa-facebook:hover {
-            color: #1877F2
+        color: #1877F2
      }  
     .icon.fa-linkedin:hover {
-            color: #0077B5
+        color: #0077B5
      }
     .icon.fa-github:hover {
-            color:#000000
+        color:#000000
     }
 }
 
@@ -115,16 +121,25 @@ footer {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 2px;
+    flex-direction:row;
+}
+
+.top-row {
+    padding-top: 185px;
+}
+
+.bottom-row {
+    padding-bottom: 185px;
 }
 
 .box {
-        background-color: #fff;
-        width: 200px; 
-        height: 70px; 
-        margin: 10px;
-        display:flex;
-        justify-content: left;
+    background-color: #fff;
+    width: 200px; 
+    height: 70px; 
+    margin: 10px;
+    display: flex;
+    justify-content: left;
         align-items: center;
 
         .icon {
@@ -167,3 +182,14 @@ footer {
     color:#f7cc4d;
     background-color:#fbf5db;
 }
+
+p.number {
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+p.info {
+    font-size: 20px;
+    margin-top: 5px;
+}
+

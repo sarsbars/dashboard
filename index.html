@@ -5,18 +5,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="author" content="Sarah Mitchell" />
         <link rel="icon" href="./assets/img/caticon.png" type="image/png">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
         <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <title>Dashboard</title>
     </head>
     <body>
-        <header>
+        <header class="container">
             <div class="container flex justify-between">
-                    <h1>Dashboard</h1>
+                <h1>Dashboard</h1>
                 <nav>
                     <ul>
                         <li><a href="projects">Projects</a></li>
@@ -25,30 +24,31 @@
                         <li><a href="login">Login</a></li>
                     </ul>
                 </nav>
-            
+            </div>
         </header>
         <main class="flex">
-            <div class ="container dashboard flex">
+            <div class =" container dashboard flex">
                 <section class="top-row flex">
                     <div class="box users flex">
                         <div class="users-icon">
                             <a href="#"><i class ="icon fa-solid fa-user"></i></a>
                         </div>
                         <p class="number">245</p>
-                        <p>users</p>
+                        <p class="info">users</p>
                     </div>
                     <div class="box articles flex">
                         <div class="articles-icon">
                             <a href="#"><i class="icon fa-solid fa-pen-nib"></i></a>
                         </div>
-                        <p>74 articles</p>
-
+                        <p class="number">74</p>
+                        <p class="info">articles</p>
                     </div>
                     <div class="box messages flex">
                         <div class="messages-icon">
                             <a href="#"><i class ="icon fa-solid fa-comment"></i></a>
                         </div>
-                        <p>27 messages</p>
+                        <p class="number">27</p>
+                        <p class="info">messages</p>
                     </div>
                 </section>
 
@@ -57,52 +57,43 @@
                         <div class="moderators-icon">
                             <a href="#"><i class ="icon fa-solid fa-users"></i></a>
                         </div>
-                        <p>12 moderators</p>
-
+                        <p class="number">12</p>
+                        <p class="info">moderators</p>
                     </div>
                     <div class="box visits flex">
                         <div class="visits-icon">
                             <a href="#"><i class ="icon fa-solid fa-eye"></i></a>
-
                         </div>
-                        <p>1125 visits</p>
-
+                        <p class="number">1125</p>
+                        <p class="info">visits</p>
                     </div>
+
                     <div class="box tasks flex">
                         <div class="tasks-icon">
                             <a href="#"><i class ="icon fa-solid fa-calendar"></i></a>
-
                         </div>
-                        <p>4 tasks</p>
-
+                        <p class="number">4</p>
+                        <p class="info">tasks</p>
                     </div>
                 </section>
-            </div>
-        </div>
-              
+            </div>     
         </main>   
    
-         <footer>
+         <footer class="container">
             <div class ="contact-section">
                 <ul>
                     <li>
-                        <a href="#" class="fa-stack">
-                            <i class ="icon fa-brands fa-facebook"></i>
-                        </a>
+                        <a href="#"><i class ="icon fa-brands fa-facebook"></i></a>
                     </li>
                     <li> 
-                        <a href="#" class ="fa-stack">
-                            <i class ="icon fa-brands fa-linkedin"></i>
-                        </a>
+                        <a href="#"><i class ="icon fa-brands fa-linkedin"></i></a>
                     </li>
                     <li>
-                        <a href="#" class="fa-stack">
-                            <i class="icon fa-brands fa-github"></i>
-                        </a>
+                        <a href="#"><i class="icon fa-brands fa-github"></i></a>
                     </li>
                 </ul>
             </div>
-            <p> &copy Sarah Mitchell 2025</p>
+            <p>&copy Sarah Mitchell 2025</p>
          </footer>
     </body>
 </html>
